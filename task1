@@ -19,19 +19,11 @@
 <body>
 <form method="POST">
     <p>Первое число</p>
-    <input id="num1" type="number" min="0" step="0.1"> // проптсал форму ввода, с шагом ввода 0.1
+    <input id="num1" type="number" min="0" step="0.1"> // прописал форму ввода, с шагом ввода 0.1
     <p>Второе число</p>
-    <input id="num2" type="number" min="0" step="0.1"> <br> // проптсал форму ввода, с шагом ввода 0.1
+    <input id="num2" type="number" min="0" step="0.1"> <br> // прописал форму ввода, с шагом ввода 0.1
     <button onclick="sum();">Сложить</button>
 
 </form>
 </body>
 </html>
-
-function sum() {
-    let num1 = parseFloat(document.getElementById('num1').value); // Получаем значение элементов по ID
-    let num2 = parseFloat(document.getElementById('num2').value);
-    if (isNaN(num1)==true) num1=0; //проверяем, что в полях цифры
-    if (isNaN(num2)==true) num2=0;
-    alert((num1 + num2).toFixed(1)); //складываем и выводим
-}
